@@ -1,0 +1,28 @@
+### Listar profissões
+GET http://localhost:8080/profissoes
+
+### Cadastrar profissão
+POST http://localhost:8080/profissoes
+Content-Type: application/json
+
+{
+  "nome": "Desenvolvedor"
+}
+
+### Cadastrar cliente
+POST http://localhost:8080/clientes
+Content-Type: application/json
+
+{
+  "nome": "Maria Silva",
+  "email": "maria@example.com",
+  "telefone": "11999999999",
+  "documento": "529.982.247-25",
+  "profissaoId": 1
+}
+
+### Listar clientes
+GET http://localhost:8080/clientes
+
+### Buscar cliente por ID
+GET http://localhost:8080/clientes/1
